@@ -26,3 +26,15 @@ print "##########################"
 print "dict test:"
 d = {'Michael': 95, 'Bob': 75, 'Tracy': 85}
 print d['Bob']
+
+print "##########################"
+print "function test:"
+def my_abs(x):
+    if x >= 0:
+        return x
+    else:
+        return -x
+print "origin: -10"
+result = my_abs(-10)
+print "now:"
+print result
