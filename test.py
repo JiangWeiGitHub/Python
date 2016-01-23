@@ -46,3 +46,10 @@ def fact(n):
 
 print "parameter: 5"
 print "result: %d"%fact(5)
+
+print "##########################"
+print "slice test:"
+print "origin: 'Michael', 'Sarah', 'Tracy', 'Bob', 'Jack'"
+L = ['Michael', 'Sarah', 'Tracy', 'Bob', 'Jack']
+print "print 1~3"
+print L[0:3]
