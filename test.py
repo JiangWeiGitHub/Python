@@ -36,5 +36,13 @@ def my_abs(x):
         return -x
 print "origin: -10"
 result = my_abs(-10)
-print "now:"
-print result
+print "now: %d\n"%result
+
+print "recursion test:"
+def fact(n):
+    if n==1:
+        return 1
+    return n * fact(n - 1)
+
+print "parameter: 5"
+print "result: %d"%fact(5)
