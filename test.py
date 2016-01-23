@@ -53,3 +53,10 @@ print "origin: 'Michael', 'Sarah', 'Tracy', 'Bob', 'Jack'"
 L = ['Michael', 'Sarah', 'Tracy', 'Bob', 'Jack']
 print "print 1~3"
 print L[0:3]
+
+print "##########################"
+print "iteration test:"
+print "origin: (1, 1), (2, 4), (3, 9)"
+for x, y in [(1, 1), (2, 4), (3, 9)]:
+	print x,y
+
