@@ -82,7 +82,11 @@ def fib(max):
         a, b = b, a + b
         n = n + 1
 test = fib(10)
+print "print method 1:"
 for n in range(10):
     print test.next()
 
+print "print method 2:"
+for n in fib(10):
+    print n
 
