@@ -67,4 +67,10 @@ print "method: [x * x for x in range(1, 11)]"
 test = [x * x for x in range(1, 11)]
 print test
 
+print "##########################"
+print "Generator test:"
+print "method: (x * x for x in range(1, 11))"
+test = (x * x for x in range(1, 11))
+for n in test:
+    print n
 
