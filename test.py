@@ -60,3 +60,11 @@ print "origin: (1, 1), (2, 4), (3, 9)"
 for x, y in [(1, 1), (2, 4), (3, 9)]:
 	print x,y
 
+print "##########################"
+print "List Comprehensions test:"
+print "goal: [1x1, 2x2, 3x3, ..., 10x10]"
+print "method: [x * x for x in range(1, 11)]"
+test = [x * x for x in range(1, 11)]
+print test
+
+
