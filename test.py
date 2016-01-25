@@ -90,3 +90,21 @@ print "print method 2:"
 for n in fib(10):
     print n
 
+print "##########################"
+print "Higher-order function test:"
+def add(x, y, f):
+    return f(x) + f(y)
+aaa = 10
+bbb = 20
+def ccc(tmp):
+    return tmp*tmp
+ddd = add(aaa,bbb,ccc)
+print "function: def add(x, y, f):"
+print "    return f(x) + f(y)"
+print "parameters: aaa,bbb,ccc"
+print "aaa = 10, bbb = 20, ccc = "
+print "def ccc(tmp):"
+print "    return tmp*tmp"
+print "result: "
+print ddd
+
