@@ -108,3 +108,19 @@ print "    return tmp*tmp"
 print "result: "
 print ddd
 
+print "##########################"
+print "map test:"
+print "function:"
+print "def f(x):"
+print "    return x * x"
+print "map method:"
+print "map(f,[1,2,3,4,5,6,7,8,9])"
+print "result:"
+def f(x):
+    return x * x
+result = map(f,[1,2,3,4,5,6,7,8,9])
+print result
+
+
+
+
