@@ -3,10 +3,12 @@
 
 print "##########################"
 print "utf-8 test:"
+print "print \'\\xe4\\xb8\\xad\\xe6\\x96\\x87\\'.decode(\'utf-8\')"
 print '\xe4\xb8\xad\xe6\x96\x87'.decode('utf-8')
 
 print "##########################"
 print "print test:"
+print "print \"Your Score is: %03d, %s!\" % (99,\'Tom\')"
 print "Your Score is: %03d, %s!" % (99,'Tom')
 
 print "##########################"
