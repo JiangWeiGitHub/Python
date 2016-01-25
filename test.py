@@ -121,6 +121,18 @@ def f(x):
 result = map(f,[1,2,3,4,5,6,7,8,9])
 print result
 
+print "##########################"
+print "reduce test:"
+print "function:"
+print "def add(x, y):"
+print "    return x + y"
+print "reduce method:"
+print "reduce(add, [1, 3, 5, 7, 9])"
+print "result:"
+def add(x, y):
+    return x + y
+result = reduce(add, [1, 3, 5, 7, 9])
+print result
 
 
 
