@@ -168,6 +168,15 @@ print result
 
 print "##########################"
 print "sorted test:"
+print "def cmp_ignore_case(s1, s2):"
+print "    u1 = s1.upper()"
+print "    u2 = s2.upper()"
+print "    if u1 < u2:"
+print "        return -1"
+print "    if u1 > u2:"
+print "        return 1"
+print "    return 0"
+print "sorted(['bob', 'about', 'Zoo', 'Credit'], cmp_ignore_case)"
 def cmp_ignore_case(s1, s2):
     u1 = s1.upper()
     u2 = s2.upper()
@@ -177,6 +186,7 @@ def cmp_ignore_case(s1, s2):
         return 1
     return 0
 result = sorted(['bob', 'about', 'Zoo', 'Credit'], cmp_ignore_case)
+print "result:"
 print result
 
 
