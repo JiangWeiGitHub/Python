@@ -1,22 +1,26 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+print ""
 print "##########################"
 print "utf-8 test:"
 print "print \'\\xe4\\xb8\\xad\\xe6\\x96\\x87\\'.decode(\'utf-8\')"
 print '\xe4\xb8\xad\xe6\x96\x87'.decode('utf-8')
 
+print ""
 print "##########################"
 print "print test:"
 print "print \"Your Score is: %03d, %s!\" % (99,\'Tom\')"
 print "Your Score is: %03d, %s!" % (99,'Tom')
 
+print ""
 print "##########################"
 print "list test:"
 names = ['Michael', 'Bob', 'Tracy']
 for name in names:
     print name
 
+print ""
 print "##########################"
 print "range test:"
 sum = 0
@@ -24,11 +28,13 @@ for x in range(101):
     sum = sum + x
 print sum
 
+print ""
 print "##########################"
 print "dict test:"
 d = {'Michael': 95, 'Bob': 75, 'Tracy': 85}
 print d['Bob']
 
+print ""
 print "##########################"
 print "function test:"
 def my_abs(x):
@@ -40,6 +46,7 @@ print "origin: -10"
 result = my_abs(-10)
 print "now: %d\n"%result
 
+print ""
 print "recursion test:"
 def fact(n):
     if n==1:
@@ -49,6 +56,7 @@ def fact(n):
 print "parameter: 5"
 print "result: %d"%fact(5)
 
+print ""
 print "##########################"
 print "slice test:"
 print "origin: 'Michael', 'Sarah', 'Tracy', 'Bob', 'Jack'"
@@ -56,12 +64,14 @@ L = ['Michael', 'Sarah', 'Tracy', 'Bob', 'Jack']
 print "print 1~3"
 print L[0:3]
 
+print ""
 print "##########################"
 print "iteration test:"
 print "origin: (1, 1), (2, 4), (3, 9)"
 for x, y in [(1, 1), (2, 4), (3, 9)]:
 	print x,y
 
+print ""
 print "##########################"
 print "List Comprehensions test:"
 print "goal: [1x1, 2x2, 3x3, ..., 10x10]"
@@ -69,6 +79,7 @@ print "method: [x * x for x in range(1, 11)]"
 test = [x * x for x in range(1, 11)]
 print test
 
+print ""
 print "##########################"
 print "Generator test:"
 print "method: (x * x for x in range(1, 11))"
@@ -76,6 +87,7 @@ test = (x * x for x in range(1, 11))
 for n in test:
     print n
 
+print ""
 print "Yield test:"
 def fib(max):
     n, a, b = 0, 0, 1
@@ -88,10 +100,12 @@ print "print method 1:"
 for n in range(10):
     print test.next()
 
+print ""
 print "print method 2:"
 for n in fib(10):
     print n
 
+print ""
 print "##########################"
 print "Higher-order function test:"
 def add(x, y, f):
@@ -110,6 +124,7 @@ print "    return tmp*tmp"
 print "result: "
 print ddd
 
+print ""
 print "##########################"
 print "map test:"
 print "function:"
@@ -123,6 +138,7 @@ def f(x):
 result = map(f,[1,2,3,4,5,6,7,8,9])
 print result
 
+print ""
 print "##########################"
 print "reduce test:"
 print "function:"
@@ -136,6 +152,7 @@ def add(x, y):
 result = reduce(add, [1, 3, 5, 7, 9])
 print result
 
+print ""
 print "##########################"
 print "map & reduce test:"
 print "def str2int(s):"
@@ -155,6 +172,7 @@ def str2int(s):
 result = str2int('5211314')
 print result
 
+print ""
 print "##########################"
 print "filter test:"
 print "def is_odd(n):"
@@ -166,6 +184,7 @@ result = filter(is_odd, [1, 2, 4, 5, 6, 9, 10, 15])
 print "result:"
 print result
 
+print ""
 print "##########################"
 print "sorted test:"
 print "def cmp_ignore_case(s1, s2):"
