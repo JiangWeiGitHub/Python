@@ -326,7 +326,35 @@ print int2('1000000')
 print "result: int2(\'1010101\')"
 print int2('1010101')
 
+print ""
+print "##########################"
+print "module test:"
 
+print ""
+print "import sys"
+print ""
+print "def test():"
+print "    args = sys.argv"
+print "    if len(args) == 1:"
+print "        print 'Hello, world!'"
+print "    elif len(args) == 2:"
+print "        print 'Hello, %s!' % args[1]"
+print "    else:"
+print "        print 'Too many arguments!'"
+print ""
 
+import sys
 
+def test():
+    args = sys.argv
+    if len(args) == 1:
+        print 'Hello, world!'
+    elif len(args) == 2:
+        print 'Hello, %s!' % args[1]
+    else:
+        print 'Too many arguments!'
+
+print ""
+print "result: test()"
+print test()
 
