@@ -208,8 +208,59 @@ result = sorted(['bob', 'about', 'Zoo', 'Credit'], cmp_ignore_case)
 print "result:"
 print result
 
+print ""
+print "##########################"
+print "return function test:"
+print "def lazy_sum(*args):"
+print "    def sum():"
+print "        ax = 0"
+print "        for n in args:"
+print "            ax = ax + n"
+print "        return ax"
+print "    return sum"
+print "f = lazy_sum(1, 3, 5, 7, 9)"
 
+def lazy_sum(*args):
+    def sum():
+        ax = 0
+        for n in args:
+            ax = ax + n
+        return ax
+    return sum
+f = lazy_sum(1, 3, 5, 7, 9)
+print ""
+print "result: f()"
+print f()
 
+print ""
+print "def count():"
+print "    fs = []"
+print "    for i in range(1, 4):"
+print "        def f(j):"
+print "            def g():"
+print "                return j*j"
+print "            return g"
+print "        fs.append(f(i))"
+print "    return fs"
+def count():
+    fs = []
+    for i in range(1, 4):
+        def f(j):
+            def g():
+                return j*j
+            return g
+        fs.append(f(i))
+    return fs
+print ""
+print "f1, f2, f3 = count()"
+f1, f2, f3 = count()
+print ""
+print "result: f1()"
+print f1()
+print "result: f2()"
+print f2()
+print "result: f3()"
+print f3()
 
 
 
