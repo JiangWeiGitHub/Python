@@ -262,8 +262,17 @@ print f2()
 print "result: f3()"
 print f3()
 
+print ""
+print "##########################"
+print "lambda test:"
+print "map(lambda x: x * x, [1, 2, 3, 4, 5, 6, 7, 8, 9])"
+print "result:"
+print map(lambda x: x * x, [1, 2, 3, 4, 5, 6, 7, 8, 9])
 
-
-
+print ""
+print "f = lambda x: x * x"
+print "result: f(5) =",
+f = lambda x: x * x
+print f(5)
 
 
