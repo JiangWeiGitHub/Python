@@ -275,4 +275,28 @@ print "result: f(5) =",
 f = lambda x: x * x
 print f(5)
 
+print ""
+print "##########################"
+print "decorator test:"
+
+def log(text):
+    def decorator(func):
+        def wrapper(*args, **kw):
+            print '%s %s():' % (text, func.__name__)
+            func(*args, **kw)
+            print '%s end' % (text)
+        return wrapper
+    return decorator
+
+@log('execute')
+def now():
+    print '2016-02-01'
+
+print now()
+
+
+
+
+
+
 
