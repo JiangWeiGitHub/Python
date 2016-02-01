@@ -279,6 +279,19 @@ print ""
 print "##########################"
 print "decorator test:"
 
+print "def log(text):"
+print "    def decorator(func):"
+print "        def wrapper(*args, **kw):"
+print "            print '%s %s():' % (text, func.__name__)"
+print "            func(*args, **kw)"
+print "            print '%s end' % (text)"
+print "        return wrapper"
+print "    return decorator"
+print ""
+print "@log('execute')"
+print "def now():"
+print "    print '2016-02-01'"
+
 def log(text):
     def decorator(func):
         def wrapper(*args, **kw):
@@ -292,9 +305,26 @@ def log(text):
 def now():
     print '2016-02-01'
 
+print ""
+print "result:"
 print now()
 
+print ""
+print "##########################"
+print "partial test:"
 
+print ""
+print "import functools"
+print ""
+print "int2 = functools.partial(int, base=2)"
+import functools
+int2 = functools.partial(int, base=2)
+
+print "result: int2(\'1000000\')"
+print int2('1000000')
+
+print "result: int2(\'1010101\')"
+print int2('1010101')
 
 
 
