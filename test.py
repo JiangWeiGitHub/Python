@@ -358,3 +358,6 @@ print ""
 print "result: test()"
 print test()
 
+print ""
+print "##########################"
+print "github for windows test:"
